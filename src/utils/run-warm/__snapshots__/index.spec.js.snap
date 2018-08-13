@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Utility: runWarm] should return early if the event is from the scheduler 1`] = `"pinged"`;

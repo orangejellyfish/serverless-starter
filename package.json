@@ -1,0 +1,48 @@
+{
+  "name": "@orangejellyfish/serverless-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "deploy": "export NODE_ENV=dev && npm run deploy:env",
+    "deploy:env": "sls deploy --stage $NODE_ENV",
+    "deploy:production": "export NODE_ENV=production && npm run deploy:env",
+    "lint": "eslint ./src",
+    "precommit": "lint-staged",
+    "start": "serverless offline start",
+    "tail:hello": "serverless logs --function hello --tail",
+    "test": "jest --watch src",
+    "watch:hello": "serverless invoke local --watch --function hello --path fixtures/event.json",
+    "watch:warm": "serverless invoke local --watch --function hello --path fixtures/scheduled.json"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.291.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-rc.1",
+    "@babel/preset-env": "^7.0.0-rc.1",
+    "@babel/register": "^7.0.0-rc.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.4.2",
+    "babel-loader": "^8.0.0-beta.4",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "husky": "^0.14.3",
+    "jest": "^23.5.0",
+    "lint-staged": "^7.2.2",
+    "serverless": "^1.30.0",
+    "serverless-offline": "^3.25.7",
+    "serverless-webpack": "^5.2.0",
+    "webpack": "^4.16.5",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "npm run lint -- --fix",
+      "git add"
+    ]
+  },
+  "jest": {
+    "collectCoverage": true
+  }
+}
