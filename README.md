@@ -29,6 +29,14 @@ project by [Postlight][pl].
 - Local AWS Lambda and API Gateway emulation via the [serverless-offline][so]
   plugin.
 
+## Usage
+
+You can use the Serverless CLI to scaffold a new project from this starter kit:
+
+```sh
+serverless create --template-url https://github.com/orangejellyfish/serverless-starter --path your/local/path
+```
+
 ## Known issues
 
 > WARNING: More than one matching handlers found for 'src/functions/hello/index'.
