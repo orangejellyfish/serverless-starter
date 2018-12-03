@@ -1,0 +1,9 @@
+hello:
+  handler: src/functions/hello/index.default
+  events:
+    - http:
+        path: hello
+        method: get
+    - schedule:
+        rate: rate(5 minutes)
+        enabled: true

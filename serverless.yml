@@ -5,16 +5,13 @@ provider:
   name: aws
   runtime: nodejs8.10
 
+# Lambda function definitions. Each function defines itself in a separate YAML
+# file that resides alongside the function implementation. Unfortunately we have
+# to duplicate the function name here due to the way Serverless YAML importing
+# and parsing works (in an ideal world we could include these in a list as we do
+# for resources).
 functions:
-  hello:
-    handler: src/functions/hello/index.default
-    events:
-      - http:
-          path: hello
-          method: get
-      - schedule:
-          rate: rate(5 minutes)
-          enabled: true
+  hello: ${file(src/functions/hello/index.yml):hello}
 
 custom:
   webpack:

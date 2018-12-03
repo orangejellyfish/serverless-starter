@@ -1,8 +1,8 @@
 # serverless-starter
 
-An opinionated starter kit by [orangejellyfish][oj] for 
+An opinionated starter kit by [orangejellyfish][oj] for
 [Serverless framework][sls] apps running in [AWS][aws]. Built to be future-proof.
-Inspired by and adapted from the excellent [serverless-babel-starter][sbs] 
+Inspired by and adapted from the excellent [serverless-babel-starter][sbs]
 project by [Postlight][pl].
 
 ## Features
@@ -17,8 +17,12 @@ project by [Postlight][pl].
   meaning you can use even more cutting-edge ECMAScript features if you need to,
   without unnecessarily compiling code that would be supported by Node 8.
 
-- A "run warm" utility  which can be used as a higher order function by any 
-  Lambda function handler to keep the container alive, avoiding the 
+- Lambda config is located alongside the function code and referenced from the
+  top-level Serverless configuration file, offering greater separation of
+  concerns and keeping the configuration file readable.
+
+- A "run warm" utility  which can be used as a higher order function by any
+  Lambda function handler to keep the container alive, avoiding the
   [cold start][cs] performance problem.
 
 - [Jest][jest] support for unit testing, gathering coverage information by
