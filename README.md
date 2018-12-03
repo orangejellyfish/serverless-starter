@@ -21,6 +21,10 @@ project by [Postlight][pl].
   top-level Serverless configuration file, offering greater separation of
   concerns and keeping the configuration file readable.
 
+- IAM roles are configured per-Lambda via the
+  [serverless-iam-roles-per-function][sirpf] plugin, meaning functions better
+  follow the principle of least privilege and are therefore more secure.
+
 - A "run warm" utility  which can be used as a higher order function by any
   Lambda function handler to keep the container alive, avoiding the
   [cold start][cs] performance problem.
@@ -59,6 +63,7 @@ can be safely ignored. See [this issue][swi] for more information.
 [sw]: https://github.com/serverless-heaven/serverless-webpack
 [b7]: https://babeljs.io/docs/en/next/index.html
 [bpe]: https://babeljs.io/docs/en/next/babel-preset-env.html
+[sirpf]: https://github.com/functionalone/serverless-iam-roles-per-function
 [cs]: https://serverless.com/blog/keep-your-lambdas-warm/
 [jest]: https://jestjs.io/
 [cc]: https://www.orangejellyfish.com/blog/code-consistency-with-eslint-and-husky/

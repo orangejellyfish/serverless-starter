@@ -20,3 +20,4 @@ custom:
 plugins:
   - serverless-webpack
   - serverless-offline
+  - serverless-iam-roles-per-function
