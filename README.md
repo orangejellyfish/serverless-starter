@@ -25,6 +25,10 @@ project by [Postlight][pl].
   [serverless-iam-roles-per-function][sirpf] plugin, meaning functions better
   follow the principle of least privilege and are therefore more secure.
 
+- API Gateway request logging into CloudWatch is enabled by default, meaning
+  it will be easier to trace requests through the system, leading to more
+  convenient debugging.
+
 - A "run warm" utility  which can be used as a higher order function by any
   Lambda function handler to keep the container alive, avoiding the
   [cold start][cs] performance problem.

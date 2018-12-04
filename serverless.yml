@@ -13,11 +13,21 @@ provider:
 functions:
   hello: ${file(src/functions/hello/index.yml):hello}
 
+# Custom AWS resource definitions. This includes anything that the Serverless
+# framework doesn't handle for us, such as database setup, and overrides of
+# Serverless defaults.
+resources:
+  - ${file(src/resources/apigateway.yml)}
+  - ${file(src/resources/iam.yml)}
+
 custom:
   webpack:
     includeModules: true
 
+# Serverless plugins. The "stage-variables" plugin is required to allow us to
+# customise the API Gateway stage that gets created automatically by Serverless.
 plugins:
   - serverless-webpack
   - serverless-offline
   - serverless-iam-roles-per-function
+  - serverless-plugin-stage-variables
