@@ -24,7 +24,7 @@
     "eslint-plugin-import": "^2.16.0",
     "husky": "^2.4.1",
     "jest": "^24.1.0",
-    "lint-staged": "^8.1.5",
+    "lint-staged": "^8.2.1",
     "serverless": "^1.38.0",
     "serverless-iam-roles-per-function": "^1.0.4",
     "serverless-offline": "^3.31.3",
