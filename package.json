@@ -14,7 +14,7 @@
     "aws-sdk": "^2.493.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.4",
+    "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.4",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^24.8.0",
