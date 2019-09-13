@@ -20,10 +20,6 @@ resources:
   - ${file(src/resources/apigateway.yml)}
   - ${file(src/resources/iam.yml)}
 
-custom:
-  webpack:
-    includeModules: true
-
 # Serverless plugins. The "stage-variables" plugin is required to allow us to
 # customise the API Gateway stage that gets created automatically by Serverless.
 plugins:
