@@ -3,7 +3,7 @@ frameworkVersion: '=1.50.0'
 
 provider:
   name: aws
-  runtime: nodejs8.10
+  runtime: nodejs10.x
 
 # Lambda function definitions. Each function defines itself in a separate YAML
 # file that resides alongside the function implementation. Unfortunately we have
