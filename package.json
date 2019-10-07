@@ -33,7 +33,7 @@
     "serverless-offline": "^5.11.0",
     "serverless-plugin-stage-variables": "^1.9.5",
     "serverless-webpack": "^5.3.1",
-    "webpack": "^4.40.2"
+    "webpack": "^4.41.0"
   },
   "husky": {
     "hooks": {
