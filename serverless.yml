@@ -1,9 +1,9 @@
 service: orangejellyfish-serverless-starter
-frameworkVersion: '=1.52.0'
+frameworkVersion: '=1.60.5'
 
 provider:
   name: aws
-  runtime: nodejs10.x
+  runtime: nodejs12.x
 
 # Lambda function definitions. Each function defines itself in a separate YAML
 # file that resides alongside the function implementation. Unfortunately we have
