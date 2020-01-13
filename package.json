@@ -14,7 +14,7 @@
     "node": "10.16.3"
   },
   "dependencies": {
-    "aws-sdk": "2.488.0"
+    "aws-sdk": "2.536.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",
