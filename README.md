@@ -7,7 +7,7 @@ project by [Postlight][pl].
 
 ## Features
 
-- Lambdas run Node 10 by default making your functions faster and giving you the
+- Lambdas run Node 12 by default making your functions faster and giving you the
   ability to use more recent ECMAScript features including async/await.
 
 - Lambda code is bundled with Webpack 4 via the [serverless-webpack][sw] plugin,
@@ -15,7 +15,7 @@ project by [Postlight][pl].
 
 - Lambda code is compiled with [Babel 7][b7] and [babel-preset-env][bpe],
   meaning you can use even more cutting-edge ECMAScript features if you need to,
-  without unnecessarily compiling code that would be supported by Node 10.
+  without unnecessarily compiling code that would be supported by Node 12.
 
 - Lambda config is located alongside the function code and referenced from the
   top-level Serverless configuration file, offering greater separation of
