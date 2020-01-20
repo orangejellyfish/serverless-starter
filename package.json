@@ -28,7 +28,7 @@
     "husky": "^4.0.7",
     "jest": "^24.9.0",
     "lint-staged": "^9.5.0",
-    "serverless": "^1.60.5",
+    "serverless": "^1.61.2",
     "serverless-iam-roles-per-function": "^2.0.2",
     "serverless-offline": "^5.12.1",
     "serverless-plugin-stage-variables": "^1.9.5",
