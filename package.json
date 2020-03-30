@@ -24,7 +24,7 @@
     "babel-loader": "^8.0.6",
     "eslint": "^5.15.1",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-import": "^2.20.2",
     "husky": "^4.0.7",
     "jest": "^24.9.0",
     "lint-staged": "^9.5.0",
