@@ -2,7 +2,7 @@ import runWarm from '../../utils/run-warm';
 
 // Lambda handler. We are using an async function to simplify the code and
 // remove the need to use a callback.
-export const hello = async (event) => {
+export const hello = async function (event) {
   const response = {
     statusCode: 200,
     body: JSON.stringify({
