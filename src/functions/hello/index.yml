@@ -1,5 +1,5 @@
 hello:
-  handler: src/functions/hello/index.hello
+  handler: src/functions/hello/index.default
   events:
     - http:
         path: hello
