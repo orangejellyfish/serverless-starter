@@ -4,6 +4,11 @@ frameworkVersion: '=1.67.3'
 provider:
   name: aws
   runtime: nodejs12.x
+  region: eu-west-1
+  stage: dev
+
+package:
+  individually: true
 
 # Lambda function definitions. Each function defines itself in a separate YAML
 # file that resides alongside the function implementation. Unfortunately we have
@@ -20,10 +25,18 @@ resources:
   - ${file(src/resources/apigateway.yml)}
   - ${file(src/resources/iam.yml)}
 
+custom:
+  splitStacks:
+    perFunction: true
+    perType: false
+
 # Serverless plugins. The "stage-variables" plugin is required to allow us to
 # customise the API Gateway stage that gets created automatically by Serverless.
+# The "split-stacks" plugin is used to generate nested CloudFormation stacks to
+# work around the hard limit of 200 resources per stack.
 plugins:
   - serverless-webpack
   - serverless-offline
   - serverless-iam-roles-per-function
+  - serverless-plugin-split-stacks
   - serverless-plugin-stage-variables
