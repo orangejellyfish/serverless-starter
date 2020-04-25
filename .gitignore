@@ -5,3 +5,4 @@ coverage
 .serverless
 .env*
 *.swp
+.DS_Store
