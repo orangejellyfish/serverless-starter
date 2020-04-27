@@ -6,6 +6,7 @@
     "deploy": "export NODE_ENV=dev && npm run deploy:env",
     "deploy:env": "sls deploy --stage $NODE_ENV",
     "deploy:production": "export NODE_ENV=production && npm run deploy:env",
+    "package": "sls package",
     "lint": "eslint ./src",
     "start": "serverless offline start",
     "test": "jest --watch src"
