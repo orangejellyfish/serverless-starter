@@ -63,6 +63,14 @@ function code. It happens because the plugin detects another file in the same
 directory with a similar name. The other file is the unit test file. The warning
 can be safely ignored. See [this issue][swi] for more information.
 
+> npm WARN serverless-plugin-split-stacks@1.9.3 requires a peer of serverless@1
+> but none is installed. You must install peer dependencies yourself.
+
+This warning is logged by npm when installing dependencies. It happens because
+the [split-stacks][spss] plugin states a requirement on version 1 of the
+Serverless framework. We have tested the plugin with version 2 and to date have
+not discovered any problems. This is tracked in [an issue][spssi].
+
 [oj]: https://www.orangejellyfish.com/
 [sls]: https://serverless.com/framework/
 [aws]: https://aws.amazon.com/
@@ -80,3 +88,4 @@ can be safely ignored. See [this issue][swi] for more information.
 [cc]: https://www.orangejellyfish.com/blog/code-consistency-with-eslint-and-husky/
 [so]: https://github.com/dherault/serverless-offline
 [swi]: https://github.com/serverless-heaven/serverless-webpack/issues/405
+[spssi]: https://github.com/dougmoscrop/serverless-plugin-split-stacks/issues/132
