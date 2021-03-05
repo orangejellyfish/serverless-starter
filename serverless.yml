@@ -1,5 +1,5 @@
 service: orangejellyfish-serverless-starter
-frameworkVersion: '=2.16.0'
+frameworkVersion: '=2.28.7'
 
 provider:
   name: aws

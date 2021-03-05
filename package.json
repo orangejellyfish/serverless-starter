@@ -9,38 +9,35 @@
     "package": "sls package",
     "lint": "eslint ./src",
     "start": "serverless offline start",
-    "test": "jest --watch src"
+    "test": "jest --watch src",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
   },
   "engines": {
     "node": "12.19.0"
   },
   "dependencies": {
-    "aws-sdk": "2.771.0"
+    "aws-sdk": "2.804.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.10",
-    "@babel/preset-env": "^7.12.11",
+    "@babel/core": "^7.13.8",
+    "@babel/preset-env": "^7.13.9",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^26.6.3",
     "babel-loader": "^8.2.2",
-    "eslint": "^7.16.0",
+    "eslint": "^7.21.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
-    "husky": "^4.3.6",
+    "husky": "^5.1.3",
     "jest": "^26.6.3",
-    "lint-staged": "^10.5.3",
-    "serverless": "^2.16.0",
-    "serverless-iam-roles-per-function": "^3.0.1",
+    "lint-staged": "^10.5.4",
+    "serverless": "2.28.7",
+    "serverless-iam-roles-per-function": "^3.1.0",
     "serverless-offline": "^6.8.0",
-    "serverless-plugin-split-stacks": "1.9.3",
+    "serverless-plugin-split-stacks": "^1.11.0",
     "serverless-plugin-stage-variables": "1.9.5",
     "serverless-webpack": "^5.3.5",
     "webpack": "^4.44.2"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "lint-staged": {
     "src/**/*.js": [
