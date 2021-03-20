@@ -7,15 +7,16 @@ project by [Postlight][pl].
 
 ## Features
 
-- Lambdas run Node 12 by default making your functions faster and giving you the
-  ability to use more recent ECMAScript features including async/await.
+- Lambdas run Node 14 by default making your functions faster and giving you the
+  ability to use more recent ECMAScript features including async/await, optional
+  chaining and nullish coalescing.
 
 - Lambda code is bundled with Webpack 4 via the [serverless-webpack][sw] plugin,
   reducing the amount of code deployed to AWS.
 
 - Lambda code is compiled with [Babel 7][b7] and [babel-preset-env][bpe],
   meaning you can use even more cutting-edge ECMAScript features if you need to,
-  without unnecessarily compiling code that would be supported by Node 12.
+  without unnecessarily compiling code that would be supported by Node 14.
 
 - Lambda config is located alongside the function code and referenced from the
   top-level Serverless configuration file, offering greater separation of
@@ -28,6 +29,10 @@ project by [Postlight][pl].
 - API Gateway request logging into CloudWatch is enabled by default, meaning
   it will be easier to trace requests through the system, leading to more
   convenient debugging.
+
+- AWS X-Ray tracing is enabled for API Gateway and Lambda by default, giving
+  greater visibility of the whole stack and making it easier to track down
+  bottlenecks.
 
 - CloudFormation stacks are split into nested stacks per Lambda function via the
   [split-stacks][spss] plugin, helping to avoid the [limit of 200 resources][lim]

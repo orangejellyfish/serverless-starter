@@ -1,0 +1,10 @@
+Resources:
+
+  # An SNS topic included in the starter kit as an example just to show how we
+  # like to separate CloudFormation for custom resources into files by type. You
+  # can safely delete this file and remove the reference to it from the
+  # serverless.yml file.
+  TopicExample:
+    Type: AWS::SNS::Topic
+    Properties:
+      TopicName: ${self:service}-${self:custom.stage}-topic-example

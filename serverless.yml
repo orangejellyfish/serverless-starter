@@ -1,11 +1,25 @@
 service: orangejellyfish-serverless-starter
-frameworkVersion: '=2.28.7'
+frameworkVersion: '=2.30.3'
 
 provider:
   name: aws
-  runtime: nodejs12.x
+  runtime: nodejs14.x
   region: eu-west-1
   stage: dev
+
+  # Enable AWS X-Ray tracing for both API Gateway and Lambda. This allows us to
+  # gain visibility of requests throughout the system.
+  tracing:
+    apiGateway: true
+    lambda: true
+
+  # Enable API Gateway request logging. The default configuration includes full
+  # request/response logging to a CloudWatch log group and access logging to
+  # another. AWS does not recommend enabling full request/response logging in
+  # production environments due to the potential for recording sensitive data.
+  # This may be something to revisit and make more configurable via an option.
+  logs:
+    restApi: true
 
 package:
   individually: true
@@ -21,22 +35,26 @@ functions:
 # Custom AWS resource definitions. This includes anything that the Serverless
 # framework doesn't handle for us, such as database setup, and overrides of
 # Serverless defaults.
+#
+# An example file has been included here to demonstrate the way we like to
+# separate custom CloudFormation resources into files by type. You can safely
+# delete the example file and this reference to it.
 resources:
-  - ${file(src/resources/apigateway.yml)}
-  - ${file(src/resources/iam.yml)}
+  - ${file(src/resources/sns.yml)}
 
+# Custom configuration. This is where Serverless Framework plugins get their
+# configuration from.
 custom:
+  stage: ${opt:stage, self:provider.stage}
   splitStacks:
     perFunction: true
     perType: false
 
-# Serverless plugins. The "stage-variables" plugin is required to allow us to
-# customise the API Gateway stage that gets created automatically by Serverless.
-# The "split-stacks" plugin is used to generate nested CloudFormation stacks to
-# work around the hard limit of 200 resources per stack.
+# Serverless plugins. The "split-stacks" plugin is used to generate nested
+# CloudFormation stacks to work around the hard limit of 200 resources per
+# stack.
 plugins:
   - serverless-webpack
   - serverless-offline
   - serverless-iam-roles-per-function
   - serverless-plugin-split-stacks
-  - serverless-plugin-stage-variables
