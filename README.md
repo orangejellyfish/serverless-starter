@@ -11,7 +11,7 @@ project by [Postlight][pl].
   ability to use more recent ECMAScript features including async/await, optional
   chaining and nullish coalescing.
 
-- Lambda code is bundled with Webpack 4 via the [serverless-webpack][sw] plugin,
+- Lambda code is bundled with Webpack 5 via the [serverless-webpack][sw] plugin,
   reducing the amount of code deployed to AWS.
 
 - Lambda code is compiled with [Babel 7][b7] and [babel-preset-env][bpe],
