@@ -36,7 +36,7 @@
     "serverless-offline": "^6.8.0",
     "serverless-plugin-split-stacks": "^1.11.0",
     "serverless-webpack": "^5.4.0",
-    "webpack": "^4.46.0"
+    "webpack": "^5.27.0"
   },
   "lint-staged": {
     "src/**/*.js": [
