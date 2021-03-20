@@ -34,6 +34,9 @@ project by [Postlight][pl].
   greater visibility of the whole stack and making it easier to track down
   bottlenecks.
 
+- Opt-in to upcoming Serverless Framework features and changes to avoid seeing
+  deprecation warnings on deployment.
+
 - CloudFormation stacks are split into nested stacks per Lambda function via the
   [split-stacks][spss] plugin, helping to avoid the [limit of 200 resources][lim]
   per stack.
