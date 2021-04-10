@@ -14,30 +14,30 @@
     "lint-staged": "lint-staged"
   },
   "engines": {
-    "node": "14.15.4"
+    "node": "14.16.0"
   },
   "dependencies": {
     "aws-sdk": "2.804.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.13.13",
-    "@babel/preset-env": "^7.13.12",
+    "@babel/core": "^7.13.15",
+    "@babel/preset-env": "^7.13.15",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^26.6.3",
     "babel-loader": "^8.2.2",
-    "eslint": "^7.23.0",
+    "eslint": "^7.24.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jest": "^24.3.4",
-    "husky": "^5.2.0",
+    "husky": "^6.0.0",
     "jest": "^26.6.3",
     "lint-staged": "^10.5.4",
-    "serverless": "2.31.0",
+    "serverless": "2.35.0",
     "serverless-iam-roles-per-function": "^3.1.0",
     "serverless-offline": "^6.9.0",
     "serverless-plugin-split-stacks": "^1.11.0",
-    "serverless-webpack": "^5.4.0",
-    "webpack": "^5.28.0"
+    "serverless-webpack": "^5.4.1",
+    "webpack": "^5.31.2"
   },
   "lint-staged": {
     "src/**/*.js": [
