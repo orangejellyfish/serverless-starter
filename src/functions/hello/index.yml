@@ -1,5 +1,6 @@
 hello:
   handler: src/functions/hello/index.default
+  memorySize: 128
   events:
     - http:
         path: hello
