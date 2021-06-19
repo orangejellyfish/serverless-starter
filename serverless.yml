@@ -20,6 +20,7 @@ provider:
   # This may be something to revisit and make more configurable via an option.
   logs:
     restApi: true
+    websocket: true
 
   # Opt-in to the new naming convention for API Gateway resources. This will
   # become the default in the next major version of the Serverless Framework and
