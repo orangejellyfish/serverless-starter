@@ -2,7 +2,7 @@
 
 exports[`[Function: hello] should return the expected response 1`] = `
 Object {
-  "body": "{\\"message\\":\\"Go Serverless v1.0! Your function executed successfully!\\",\\"version\\":\\"v14.15.4\\"}",
+  "body": "{\\"message\\":\\"Go Serverless v1.0! Your function executed successfully!\\",\\"version\\":\\"v14.17.0\\"}",
   "statusCode": 200,
 }
 `;
