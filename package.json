@@ -30,7 +30,7 @@
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-jest": "^24.3.6",
     "husky": "^6.0.0",
-    "jest": "^27.0.4",
+    "jest": "^27.0.5",
     "lint-staged": "^11.0.0",
     "serverless": "2.47.0",
     "serverless-iam-roles-per-function": "^3.1.0",
