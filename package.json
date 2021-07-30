@@ -20,24 +20,24 @@
     "aws-sdk": "2.880.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.6",
-    "@babel/preset-env": "^7.14.5",
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.8",
     "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "^27.0.2",
+    "babel-jest": "^27.0.6",
     "babel-loader": "^8.2.2",
-    "eslint": "^7.29.0",
+    "eslint": "^7.31.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.23.4",
-    "eslint-plugin-jest": "^24.3.6",
-    "husky": "^6.0.0",
-    "jest": "^27.0.4",
-    "lint-staged": "^11.0.0",
-    "serverless": "2.47.0",
-    "serverless-iam-roles-per-function": "^3.1.0",
-    "serverless-offline": "^7.0.0",
-    "serverless-plugin-split-stacks": "^1.11.0",
+    "eslint-plugin-jest": "^24.4.0",
+    "husky": "^7.0.1",
+    "jest": "^27.0.6",
+    "lint-staged": "^11.1.1",
+    "serverless": "2.52.1",
+    "serverless-iam-roles-per-function": "^3.2.0",
+    "serverless-offline": "^8.0.0",
+    "serverless-plugin-split-stacks": "^1.11.2",
     "serverless-webpack": "^5.5.1",
-    "webpack": "^5.39.1"
+    "webpack": "^5.47.1"
   },
   "lint-staged": {
     "src/**/*.js": [
