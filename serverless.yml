@@ -33,6 +33,21 @@ provider:
   # logs a deprecation warning if not opted-in.
   lambdaHashingVersion: "20201221"
 
+  # IAM role for all functions. We define X-Ray permissions here because the
+  # serverless-iam-roles-per-function plugin does not yet have the ability to
+  # automatically add them based on the tracing config below.
+  #
+  # The format of this property is changing in the next major version of the
+  # Serverless Framework and using this old pattern logs a deprecation warning
+  # during deployment. Unfortunately, serverless-iam-roles-per-function does not
+  # yet support the new format.
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - xray:PutTelemetryRecords
+        - xray:PutTraceSegments
+      Resource: "*"
+
 package:
   individually: true
 
@@ -61,6 +76,11 @@ custom:
   splitStacks:
     perFunction: true
     perType: false
+
+  # Merge per-function IAM role configuration with the provider-level role
+  # configuration.
+  serverless-iam-roles-per-function:
+    defaultInherit: true
 
 # Serverless plugins. The "split-stacks" plugin is used to generate nested
 # CloudFormation stacks to work around the hard limit of 200 resources per
