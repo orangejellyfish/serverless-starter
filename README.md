@@ -71,15 +71,6 @@ function code. It happens because the plugin detects another file in the same
 directory with a similar name. The other file is the unit test file. The warning
 can be safely ignored. See [this issue][swi] for more information.
 
-> Deprecation warning: CLI options definitions were upgraded with "type"
-> property
-
-This warning is logged by the [Serverless framework][sls] in response to plugins
-that do not yet define types for their CLI options. In the next major version of
-the framework this behaviour will result in errors. The warning can be safely
-ignored and will disappear when the relevant plugins are updated to include type
-definitions for their CLI options.
-
 [oj]: https://www.orangejellyfish.com/
 [sls]: https://serverless.com/framework/
 [aws]: https://aws.amazon.com/
