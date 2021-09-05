@@ -12,7 +12,8 @@ project by [Postlight][pl].
   chaining and nullish coalescing.
 
 - Lambda code is bundled with Webpack 5 via the [serverless-webpack][sw] plugin,
-  reducing the amount of code deployed to AWS.
+  reducing the amount of code deployed to AWS. Source maps are generated and
+  included in the bundle for easier debugging.
 
 - Lambda code is compiled with [Babel 7][b7] and [babel-preset-env][bpe],
   meaning you can use even more cutting-edge ECMAScript features if you need to,

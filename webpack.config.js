@@ -4,6 +4,7 @@ module.exports = {
   entry: slsw.lib.entries,
   target: 'node',
   mode: 'production',
+  devtool: 'source-map',
   externals: [{ 'aws-sdk': 'commonjs aws-sdk' }],
   module: {
     rules: [

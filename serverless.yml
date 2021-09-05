@@ -7,6 +7,12 @@ provider:
   region: eu-west-1
   stage: dev
 
+  # Environment variables common to all Lambda functions in the stack. Lambda-
+  # specific environment variables are merged with these and take precedence
+  # where duplicated.
+  environment:
+    NODE_OPTIONS: --enable-source-maps
+
   # Enable AWS X-Ray tracing for both API Gateway and Lambda. This allows us to
   # gain visibility of requests throughout the system.
   tracing:
