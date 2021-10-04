@@ -13,6 +13,14 @@ provider:
   environment:
     NODE_OPTIONS: --enable-source-maps
 
+  # Disable the versioning of Lambda function deployments. By default the
+  # Serverless Framework creates a new Lambda version every time it deploys a
+  # Lambda function which quickly leads to a large number of redundant versions
+  # in the AWS account. There is little benefit to function versioning except in
+  # specific use cases that require more thought and configuration such as
+  # canary deployments.
+  versionFunctions: false
+
   # Enable AWS X-Ray tracing for both API Gateway and Lambda. This allows us to
   # gain visibility of requests throughout the system.
   tracing:
