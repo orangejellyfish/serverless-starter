@@ -38,7 +38,7 @@
     "serverless": "2.69.1",
     "serverless-iam-roles-per-function": "^3.2.0",
     "serverless-offline": "^8.3.1",
-    "serverless-plugin-split-stacks": "^1.11.2",
+    "serverless-plugin-split-stacks": "^1.11.3",
     "serverless-webpack": "^5.6.0",
     "webpack": "^5.65.0"
   },
