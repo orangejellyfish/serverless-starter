@@ -19,16 +19,6 @@ updates:
     - 5.2.0
     - 6.0.0
   - dependency-name: serverless
-    versions:
-    - 2.20.1
-    - 2.21.1
-    - 2.22.0
-    - 2.23.0
-    - 2.25.2
-    - 2.28.0
-    - 2.28.7
-    - 2.29.0
-    - 2.33.1
   - dependency-name: webpack
     versions:
     - 5.17.0
