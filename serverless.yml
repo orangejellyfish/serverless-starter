@@ -36,9 +36,7 @@ provider:
     restApi: true
     websocket: true
 
-  # Opt-in to the new naming convention for API Gateway resources. This will
-  # become the default in the next major version of the Serverless Framework and
-  # currently logs a deprecation warning if not opted-in.
+  # Opt-in to the new naming convention for API Gateway resources.
   apiGateway:
     shouldStartNameWithService: true
 
