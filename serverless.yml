@@ -42,11 +42,6 @@ provider:
   apiGateway:
     shouldStartNameWithService: true
 
-  # Opt-in to the new Lambda version hashing algorithm. This will become the
-  # default in the next major version of the Serverless Framework and currently
-  # logs a deprecation warning if not opted-in.
-  lambdaHashingVersion: "20201221"
-
   # IAM role for all functions. We define X-Ray permissions here because the
   # serverless-iam-roles-per-function plugin does not yet have the ability to
   # automatically add them based on the tracing config below.
