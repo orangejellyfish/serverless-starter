@@ -7,7 +7,7 @@ project by [Postlight][pl].
 
 ## Features
 
-- Lambdas run Node 14 by default making your functions faster and giving you the
+- Lambdas run Node 16 by default making your functions faster and giving you the
   ability to use more recent ECMAScript features including async/await, optional
   chaining and nullish coalescing.
 
@@ -17,7 +17,7 @@ project by [Postlight][pl].
 
 - Lambda code is compiled with [Babel 7][b7] and [babel-preset-env][bpe],
   meaning you can use even more cutting-edge ECMAScript features if you need to,
-  without unnecessarily compiling code that would be supported by Node 14.
+  without unnecessarily compiling code that would be supported by Node 16.
 
 - Lambda config is located alongside the function code and referenced from the
   top-level Serverless configuration file, offering greater separation of
