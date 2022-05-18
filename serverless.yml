@@ -1,9 +1,9 @@
 service: orangejellyfish-serverless-starter
-frameworkVersion: "=3.16.0"
+frameworkVersion: "=3.17.0"
 
 provider:
   name: aws
-  runtime: nodejs14.x
+  runtime: nodejs16.x
   region: eu-west-1
   stage: dev
 
