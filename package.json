@@ -37,7 +37,7 @@
     "lint-staged": "^13.0.3",
     "serverless": "3.22.0",
     "serverless-iam-roles-per-function": "^3.2.0",
-    "serverless-offline": "^10.1.0",
+    "serverless-offline": "^11.1.2",
     "serverless-plugin-split-stacks": "^1.11.3",
     "serverless-webpack": "^5.9.1",
     "webpack": "^5.74.0"
