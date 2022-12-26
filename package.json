@@ -22,7 +22,7 @@
     "aws-sdk": "2.1083.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.19.6",
+    "@babel/core": "^7.20.7",
     "@babel/eslint-parser": "^7.19.1",
     "@babel/preset-env": "^7.19.4",
     "babel-core": "^7.0.0-bridge.0",
