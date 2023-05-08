@@ -7,7 +7,7 @@ project by [Postlight][pl].
 
 ## Features
 
-- Lambdas run Node 16 by default making your functions faster and giving you the
+- Lambdas run Node 18 by default making your functions faster and giving you the
   ability to use more recent ECMAScript features including async/await, optional
   chaining and nullish coalescing.
 
